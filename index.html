@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        *{margin: 0;box-sizing: border-box;}
+        body{font-family: sans-serif;}
+        img{max-width: 100%;}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section figure{flex: 1 1 100%;}
+section .content{flex: 0 1 auto;}
+
+figure{display: flex;}
+section figure img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
+/* collone */
+.row{display: flex; gap: 1rem;}
+.row > * { flex: 1;}
+
+.content{padding: 1rem;}
+
+/* scroll */
+html, body {scroll-snap-type: y mandatory;}
+section{scroll-snap-align: start;}
+
+        /* section { outline: 2px solid magenta;outline-offset: -3px; }
+        figure { outline: 2px solid rgb(0, 76, 255);outline-offset: -5px; }
+        .content { outline: 2px solid rgb(255, 191, 0);outline-offset: -5px; } */
+
+    </style>
+</head>
+<body>
+    
+    <section>
+        <figure>
+            <img src="media/cajou.jpg" alt="">
+        </figure>
+        <div class="content row">
+            <h3>Cajou</h3>
+            <p>La noix de cajou ou anacarde est la graine contenue dans la pomme de cajou, le fruit de l'anacardier (Anacardium
+            occidentale), arbre originaire d’Amérique tropicale. </p>
+            <p>Le fruit est une drupe dont la coque contient une résine caustique
+            et allergisante, avec à l’intérieur une amande comestible qui après avoir subi une série d’opérations de séchage,
+            chauffage, décorticage et torréfaction acquiert toutes ses qualités gustatives..</p>
+        </div>
+    </section>
+
+    <section>
+        <figure>
+            <img src="media/cajou.jpg" alt="">
+        </figure>
+        <div class="content row">
+            <h3>Cajou</h3>
+            <p>La noix de cajou ou anacarde est la graine contenue dans la pomme de cajou, le fruit de l'anacardier
+                (Anacardium
+                occidentale), arbre originaire d’Amérique tropicale. </p>
+            <p>Le fruit est une drupe dont la coque contient une résine caustique
+                et allergisante, avec à l’intérieur une amande comestible qui après avoir subi une série d’opérations de
+                séchage,
+                chauffage, décorticage et torréfaction acquiert toutes ses qualités gustatives..</p>
+        </div>
+    </section>
+
+    <section>
+        <figure>
+            <img src="media/cajou.jpg" alt="">
+        </figure>
+        <div class="content row">
+            <h3>Cajou</h3>
+            <p>La noix de cajou ou anacarde est la graine contenue dans la pomme de cajou, le fruit de l'anacardier
+                (Anacardium
+                occidentale), arbre originaire d’Amérique tropicale. </p>
+            <p>Le fruit est une drupe dont la coque contient une résine caustique
+                et allergisante, avec à l’intérieur une amande comestible qui après avoir subi une série d’opérations de
+                séchage,
+                chauffage, décorticage et torréfaction acquiert toutes ses qualités gustatives..</p>
+        </div>
+    </section>
+
+</body>
+</html>

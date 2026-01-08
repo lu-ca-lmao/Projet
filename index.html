@@ -1,95 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <style>
-        *{margin: 0;box-sizing: border-box;}
-        body{font-family: sans-serif;}
-        img{max-width: 100%;}
-
-section{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-section figure{flex: 1 1 100%; overflow: hidden;}
-section .content{flex: 0 1 min-content;}
-
-figure{display: flex;}
-section figure img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left top;
-}
-
-/* collone */
-.row{display: flex; gap: 1rem;}
-.row > * { flex: 1;}
-
-.content{padding: 1rem;}
-
-/* scroll */
-html, body {scroll-snap-type: y mandatory;}
-section{scroll-snap-align: start;}
-
-        /* section { outline: 2px solid magenta;outline-offset: -3px; }
-        figure { outline: 2px solid rgb(0, 76, 255);outline-offset: -5px; }
-        .content { outline: 2px solid rgb(255, 191, 0);outline-offset: -5px; } */
-
-    </style>
+    <title>Comp1 - Galerie</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <section>
-        <figure>
-            <img src="media/cajou.jpg" alt="">
-        </figure>
-        <div class="content row">
-            <h3>Cajou</h3>
-            <p>La noix de cajou ou anacarde est la graine contenue dans la pomme de cajou, le fruit de l'anacardier (Anacardium
-            occidentale), arbre originaire d’Amérique tropicale. </p>
-            <p>Le fruit est une drupe dont la coque contient une résine caustique
-            et allergisante, avec à l’intérieur une amande comestible qui après avoir subi une série d’opérations de séchage,
-            chauffage, décorticage et torréfaction acquiert toutes ses qualités gustatives..</p>
-        </div>
-    </section>
+    <header>
+        <h1>Comp_1</h1>
+        <p class="subtitle">Exploration visuelle & expériences numériques</p>
+    </header>
 
-    <section>
-        <figure>
-            <img src="media/cajou.jpg" alt="">
-        </figure>
-        <div class="content row">
-            <h3>Cajou</h3>
-            <p>La noix de cajou ou anacarde est la graine contenue dans la pomme de cajou, le fruit de l'anacardier
-                (Anacardium
-                occidentale), arbre originaire d’Amérique tropicale. </p>
-            <p>Le fruit est une drupe dont la coque contient une résine caustique
-                et allergisante, avec à l’intérieur une amande comestible qui après avoir subi une série d’opérations de
-                séchage,
-                chauffage, décorticage et torréfaction acquiert toutes ses qualités gustatives..</p>
-        </div>
-    </section>
+    <main>
+        <!-- Image 1 -->
+        <section class="image-block">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>L'arbre</h2>
+                <p>Un simple arbre isolée dans une plaine pas loin du sommet du mont-d'or dans le Jura</p>
+                    <div class="infos">
+                        <span>Mont - d'or</span>
+                        <span>2025</span>
+                    </div>
+            </div>
+            </div>
 
-    <section>
-        <figure>
-            <img src="media/cajou.jpg" alt="">
-        </figure>
-        <div class="content row">
-            <h3>Cajou</h3>
-            <p>La noix de cajou ou anacarde est la graine contenue dans la pomme de cajou, le fruit de l'anacardier
-                (Anacardium
-                occidentale), arbre originaire d’Amérique tropicale. </p>
-            <p>Le fruit est une drupe dont la coque contient une résine caustique
-                et allergisante, avec à l’intérieur une amande comestible qui après avoir subi une série d’opérations de
-                séchage,
-                chauffage, décorticage et torréfaction acquiert toutes ses qualités gustatives..</p>
-        </div>
-    </section>
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="blueDIV">
+                <img src="sources/_MG_0527.jpeg" alt="Perspectives Urbaines">
+            </div>
+            </div>
+            </div>
+        </section>
 
+        <!-- Image 2 -->
+        <section class="image-block reverse">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Le bâteau</h2>
+                <p>Des pècheurs se préparants pour une session de pèche dans l'océan atlantique en Espagne</p>
+                    <div class="infos">
+                        <span>Austurie - Espagne</span>
+                        <span>2024</span>
+                    </div>
+            </div>
+            </div>
+
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="redDIV">
+                <img src="sources/IMG_9688.png" alt="Abstractions">
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Image 3 -->
+        <section class="image-block">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Berk</h2>
+                <p></p>
+                    <div class="infos">
+                        <span>Dehors</span>
+                        <span>2025</span>
+                    </div>
+            </div>
+            </div>
+
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="greenDIV">
+                <img src="sources/_MG_0496.jpg" alt="Nature Métropolitaine">
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Image 4 -->
+        <section class="image-block reverse">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Lumières Nocturnes</h2>
+                <p>La ville se transforme lorsque la nuit tombe. Les lumières créent un nouveau paysage d'ombres et
+                        de reflets.</p>
+                    <div class="infos">
+                        <span>Nuit</span>
+                        <span>2023</span>
+                    </div>
+            </div>
+            </div>
+
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="yellowDIV">
+                <img src="sources/_MG_0620.jpg" alt="Lumières Nocturnes">
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Image 5 -->
+        <section class="image-block">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Géométries Humaines</h2>
+                <p>Une étude des formes humaines dans l'espace public. Comment notre présence sculpte les
+                        environnements.</p>
+                    <div class="infos">
+                        <span>Portrait</span>
+                        <span>2024</span>
+                    </div>
+            </div>
+            </div>
+
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="blackDIV">
+                <img src="sources/IMG_9535.png" alt="Géométries Humaines">
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 202 Comp_1 - Exploration visuelle</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

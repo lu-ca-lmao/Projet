@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // image 3
     createFloatingClip("greenDIV", [[30, 40], [90, 30], [70, 85], [40, 95]]);
     // image 4
-    createFloatingClip("yellowDIV", [[30, 40], [90, 30], [70, 85], [40, 95]]);
+    createFloatingClip("yellowDIV", [[25, 40], [95, 30], [75, 85], [35, 95]]);
     // image 5
-    createFloatingClip("blackDIV", [[30, 40], [90, 30], [70, 85], [40, 95]]);
+    createFloatingClip("blackDIV", [[20, 45], [80, 35], [60, 90], [30, 100]]);
 });

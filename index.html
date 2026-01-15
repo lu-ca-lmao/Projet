@@ -4,150 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fanzine One-Pager</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Comp1 - Galerie</title>
     <link rel="stylesheet" href="style.css">
-  
+
 </head>
 
 <body>
-    <!-- Bouton pour changer de thème -->
-    <button class="theme-toggle" id="themeToggle">
-        <i class="fas fa-moon"></i>
-    </button>
-
-    <!-- En-tête -->
-    <header class="header">
-        <h1>FANZINE</h1>
-        <p>Le one-pager indépendant et créatif</p>
+    <header>
+        <h1>Comp_1</h1>
+        <p class="subtitle">Exploration visuelle & expériences numériques</p>
     </header>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <a href="#article1">Article 1</a>
-        <a href="#article2">Article 2</a>
-        <a href="#article3">Article 3</a>
-        <a href="#infos">Infos</a>
-    </nav>
+    <main>
+        <!-- Image 1 -->
+        <section class="image-block">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>L'arbre</h2>
+                <p>Un simple arbre isolée dans une plaine pas loin du sommet du mont-d'or dans le Jura</p>
+                    <div class="infos">
+                        <span>Mont - d'or</span>
+                        <span>2025</span>
+                    </div>
+            </div>
+            </div>
 
-    <!-- Contenu principal -->
-    <div class="container">
-        <main class="content">
-            <!-- Article 1 -->
-            <article class="article" id="article1">
-                <h2>La Culture Zine en France</h2>
-                <p>Les fanzines ont une longue histoire dans la contre-culture française. Depuis les années 70, ces
-                    publications indépendantes ont permis à des créateurs de partager leurs idées en dehors des circuits
-                    traditionnels.</p>
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="blueDIV">
+                <img src="sources/arbre.png" alt="arbre">
+            </div>
+            </div>
+            </div>
+        </section>
 
-                <div class="image-container">
-                    <!-- Image générée par placeholder -->
-                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                        alt="Exemple de fanzine">
-                    <div class="image-caption">Un exemple de fanzine créatif</div>
-                </div>
+        <!-- Image 2 -->
+        <section class="image-block reverse">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Le bâteau</h2>
+                <p>Des pècheurs se préparants pour une session de pèche dans l'océan atlantique en Espagne</p>
+                    <div class="infos">
+                        <span>Austurie - Espagne</span>
+                        <span>2024</span>
+                    </div>
+            </div>
+            </div>
 
-                <p>Contrairement aux magazines traditionnels, les fanzines sont souvent auto-produits, avec un tirage
-                    limité et une distribution artisanale. Cette liberté permet des expérimentations graphiques et
-                    éditoriales uniques.</p>
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="redDIV">
+                <img src="sources/bateau.png" alt="bateau">
+            </div>
+            </div>
+            </div>
+        </section>
 
-                <blockquote>
-                    "Le fanzine est l'expression ultime de la liberté éditoriale : pas de pub, pas de ligne éditoriale
-                    imposée, juste la passion d'un sujet."
-                </blockquote>
+        <!-- Image 3 -->
+        <section class="image-block">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Berk</h2>
+                <p>Il parait que c'est bon pour la peau</p>
+                    <div class="infos">
+                        <span>Dehors</span>
+                        <span>2025</span>
+                    </div>
+            </div>
+            </div>
 
-                <button class="btn" id="likeBtn1">
-                    <i class="far fa-heart"></i> J'aime cet article
-                </button>
-                <span id="likeCount1">0</span> likes
-            </article>
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="greenDIV">
+                <img src="sources/main.png" alt="main">
+            </div>
+            </div>
+            </div>
+        </section>
 
-            <!-- Article 2 -->
-            <article class="article" id="article2">
-                <h2>Créer son Premier Fanzine</h2>
-                <p>Vous voulez créer votre propre fanzine ? Voici quelques conseils pour débuter :</p>
+        <!-- Image 4 -->
+        <section class="image-block reverse">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Trullo</h2>
+                <p>Maison tipyque du sud de l'italie</p>
+                    <div class="infos">
+                        <span>Italie - Alberobello</span>
+                        <span>2025</span>
+                    </div>
+            </div>
+            </div>
 
-                <ul>
-                    <li><strong>Choisissez un thème</strong> qui vous passionne vraiment</li>
-                    <li><strong>Ne vous souciez pas de la perfection</strong> - l'imperfection fait partie du charme des
-                        zines</li>
-                    <li><strong>Utilisez les moyens à votre disposition</strong> : photocopie, collage, dessin à la main
-                    </li>
-                    <li><strong>Diffusez localement</strong> : librairies indépendantes, cafés, concerts</li>
-                    <li><strong>Échangez avec d'autres créateurs</strong> de fanzines</li>
-                </ul>
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="yellowDIV">
+                <img src="sources/trulli.png" alt="trulli">
+            </div>
+            </div>
+            </div>
+        </section>
 
-                <p>N'oubliez pas : le plus important est de prendre du plaisir dans le processus créatif. Un fanzine
-                    reflète la personnalité de son créateur.</p>
+        <!-- Image 5 -->
+        <section class="image-block">
+            <div class="text-side">
+            <div class="text-content">
+                <h2>Falaise Océanique</h2>
+                <p>Vue prise lors d'une promenade en Espagne</p>
+                    <div class="infos">
+                        <span>Austurie - Espagne</span>
+                        <span>2024</span>
+                    </div>
+            </div>
+            </div>
 
-                <button class="btn" id="likeBtn2">
-                    <i class="far fa-heart"></i> J'aime cet article
-                </button>
-                <span id="likeCount2">0</span> likes
-            </article>
+            <div class="image-side">
+            <div class="myDIV">
+            <div id="blackDIV">
+                <img src="sources/ocean.png" alt="ocean">
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
 
-            <!-- Article 3 -->
-            <article class="article" id="article3">
-                <h2>Le Fanzine à l'Ère Numérique</h2>
-                <p>Avec l'avènement d'Internet, certains pensaient que les fanzines papier disparaîtraient. Au
-                    contraire, on assiste à un renouveau de cette forme d'expression.</p>
-
-                <p>Les créateurs utilisent désormais les outils numériques pour concevoir leurs zines, tout en
-                    conservant l'esprit DIY (Do It Yourself). Parallèlement, des fanzines purement numériques voient le
-                    jour, souvent sous forme de PDF gratuits ou de sites web.</p>
-
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                        alt="Création numérique de fanzine">
-                    <div class="image-caption">Création d'un fanzine avec des outils numériques</div>
-                </div>
-
-                <p>Les réseaux sociaux ont également permis aux créateurs de fanzines de se connecter, d'échanger et de
-                    trouver un public plus large, tout en conservant leur indépendance créative.</p>
-
-                <button class="btn" id="likeBtn3">
-                    <i class="far fa-heart"></i> J'aime cet article
-                </button>
-                <span id="likeCount3">0</span> likes
-            </article>
-        </main>
-
-        <!-- Barre latérale -->
-        <aside class="sidebar" id="infos">
-            <h3>À propos de ce fanzine</h3>
-            <p>Ce fanzine one-pager a été créé pour montrer qu'il est simple de partager ses passions en ligne.</p>
-
-            <h3>Prochain numéro</h3>
-            <p>Le prochain numéro sortira le 15 décembre. Thème : "Les fanzines de musique".</p>
-
-            <h3>Contribuer</h3>
-            <p>Vous voulez contribuer au prochain numéro ? Envoyez vos idées à :
-                <strong>contact@fanzine-exemple.fr</strong></p>
-
-            <h3>Liens utiles</h3>
-            <ul>
-                <li><a href="#">Archive des anciens numéros</a></li>
-                <li><a href="#">Où trouver des fanzines</a></li>
-                <li><a href="#">Ateliers de création</a></li>
-                <li><a href="#">Ressources pour créateurs</a></li>
-            </ul>
-
-            <h3>Statistiques</h3>
-            <p>Total de likes sur cette page : <span id="totalLikes">0</span></p>
-
-            <button class="btn" id="shareBtn">
-                <i class="fas fa-share-alt"></i> Partager ce fanzine
-            </button>
-        </aside>
-    </div>
-
-    <!-- Pied de page -->
-    <footer class="footer">
-        <p>Fanzine One-Pager - Édition spéciale HTML/CSS/JS</p>
-        <p>Créé avec passion et code ouvert</p>
-        <p>© 2023 - Ce contenu peut être librement partagé et modifié</p>
+    <footer>
+        <p>© 2026 Comp_1 - Exploration visuelle</p>
     </footer>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
